@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "courses",
+  "info": {
+    "singularName": "course",
+    "pluralName": "courses",
+    "displayName": "Course",
+    "description": "Training courses offered by AIInfox"
+  },
+  "options": { "draftAndPublish": true },
+  "pluginOptions": {},
+  "attributes": {
+    "site": { "type": "enumeration", "enum": ["lv", "main"], "required": true, "default": "lv" },
+    "title": { "type": "string", "required": true },
+    "slug": { "type": "uid", "targetField": "title", "required": true },
+    "shortDescription": { "type": "text", "required": true },
+    "icon": { "type": "string", "required": true },
+    "order": { "type": "integer", "required": true, "default": 0 },
+    "heroTitle": { "type": "string", "required": true },
+    "heroSubtitle": { "type": "text", "required": true },
+    "whyChooseTitle": { "type": "string", "required": true },
+    "whyChooseDescription": { "type": "richtext", "required": true },
+    "whyChooseBadge": { "type": "string", "required": true },
+    "whyChooseImage": { "type": "media", "multiple": false, "required": true, "allowedTypes": ["images"] },
+    "leftFeatures": { "type": "json", "required": true },
+    "rightFeatures": { "type": "json", "required": true },
+    "benefitCards": { "type": "json", "required": true },
+    "benefitBadge": { "type": "string", "required": true },
+    "benefitTitle": { "type": "string", "required": true },
+    "learnBadge": { "type": "string", "required": true },
+    "learnTitle": { "type": "string", "required": true },
+    "learnDescription": { "type": "richtext", "required": true },
+    "learnImage": { "type": "media", "multiple": false, "required": true, "allowedTypes": ["images"] },
+    "learnPoints": { "type": "json", "required": true },
+    "offerTitle": { "type": "string", "required": true },
+    "offerDescription": { "type": "richtext", "required": true },
+    "offerImage": { "type": "media", "multiple": false, "required": true, "allowedTypes": ["images"] },
+    "offerDetailText": { "type": "richtext", "required": true },
+    "ctaBannerTitle": { "type": "string", "required": true },
+    "ctaButtonText": { "type": "string", "required": true },
+    "seo": { "type": "component", "repeatable": false, "component": "seo-meta.seo-meta" }
+  }
+}

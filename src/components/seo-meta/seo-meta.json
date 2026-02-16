@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_seo_meta",
+  "info": {
+    "displayName": "SEO Meta",
+    "description": "Reusable SEO metadata component"
+  },
+  "options": {},
+  "attributes": {
+    "metaTitle": { "type": "string" },
+    "metaDescription": { "type": "text" },
+    "keywords": { "type": "text" },
+    "canonicalUrl": { "type": "string" },
+    "robots": { "type": "string", "default": "index, follow" },
+    "ogTitle": { "type": "string" },
+    "ogDescription": { "type": "text" },
+    "ogImage": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+    "ogType": { "type": "string", "default": "website" },
+    "twitterCard": { "type": "string", "default": "summary_large_image" },
+    "twitterTitle": { "type": "string" },
+    "twitterDescription": { "type": "text" },
+    "twitterImage": { "type": "media", "multiple": false, "allowedTypes": ["images"] }
+  }
+}

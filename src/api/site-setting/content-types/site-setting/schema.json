@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "site_settings",
+  "info": {
+    "singularName": "site-setting",
+    "pluralName": "site-settings",
+    "displayName": "Site Setting"
+  },
+  "options": { "draftAndPublish": false },
+  "pluginOptions": {},
+  "attributes": {
+    "site": { "type": "enumeration", "enum": ["lv", "main"], "required": true, "unique": true },
+    "siteName": { "type": "string" },
+    "logo": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+    "contactEmail": { "type": "string" },
+    "contactPhone": { "type": "string" },
+    "address": { "type": "text" },
+    "copyrightText": { "type": "string" },
+    "footerDescription": { "type": "text" },
+    "googleMapsEmbed": { "type": "text" },
+    "recaptchaSiteKey": { "type": "string" },
+    "crmWebhookContact": { "type": "string" },
+    "crmWebhookPopup": { "type": "string" },
+    "crmWebhookCallback": { "type": "string" }
+  }
+}
